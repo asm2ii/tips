@@ -1,0 +1,662 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+    <title>Kalkulator Parlay Bola, Mix Parlay - JayaSkor</title>
+<meta name="description" content="Gunakan kalkulator parlay bola dan mix parlay JayaSkor untuk menghitung kombinasi taruhan dan estimasi total odds dengan cepat dan mudah.">  
+    <link rel="Shortcut Icon" href="https://id.jayaskor.info/images/favicon.ico" />
+    <meta name="google-site-verification" content="WbCBmSfOfBgvy-uKXDvDWEE6rMoqj1WaounCSmxUOlw" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9PDND9K1NG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-9PDND9K1NG');
+    </script>
+<style>iframe {
+    pointer-events: none;
+}</style>    
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>*{margin:0;padding:0;box-sizing:border-box;font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;}body{min-width: 1000px;background:#f0f2f5;color:#111;transition:0.3s;}body.dark{font-size: 15px;background:#1e1e1e;color:#ddd}header{background:#052160;color:#fff;box-shadow:0 2px 6px rgb(0 0 0 / .2)}.header-image{background:url(/images/logo-hearder-jayaskor.jpg)no-repeat 0 14px;min-height:100px;overflow:hidden;width:980px;margin:0 auto;}.header-image img{width:250px;display:block;object-fit:cover;position: relative; top: 35px;left: 15px;}.header-container {background:#385493;width: 980px;margin: 0 auto;}nav ul.main-menu{position: relative;left: 20px;line-height: 40px;font-size: 15px;list-style:none;display:flex;gap:25px}nav ul.main-menu li a{font-size: 15px;color:#fff;text-decoration:none;font-weight:700;padding-bottom:3px}nav ul.main-menu li a:hover{border-bottom:2px solid #ff0}.dark-toggle{z-index: 1;position: relative;right: 10px;top: 6px;float: right;background:#ff0;color:#000;padding:5px 5px;border-radius:4px;cursor:pointer;font-weight:700}.secondary-menu{position: relative;top: 1px;width: 980px;margin: 0 auto;background:#052160;padding:10px 0;border-bottom:1px solid #ccc}body.dark .secondary-menu{background:#333;border-color:#555}.secondary-menu ul{/* width:50%; */position: relative;left: 25px;margin:auto;display:flex;gap:15px;list-style:none}.secondary-menu ul li a{color:#2b4a80;background:#fff;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:700}.secondary-menu ul li a:hover{background:#ffff00;color:#000}body.dark .secondary-menu ul li a{background:#222;color:#ddd}body.dark .secondary-menu ul li a:hover{background:#2b4a80;color:#fff}.container{width:980px;margin:5px auto;display:flex;gap:5px;}aside{width: 152px;background:#fff;padding:5px;border-radius:6px;box-shadow:0 2px 6px rgb(0 0 0 / .1)}body.dark aside{background:#2a2a2a}.main-content{width: 680px;background:#fff;padding:0;border-radius:6px;box-shadow:0 2px 6px rgb(0 0 0 / .1);overflow:hidden}body.dark .main-content{background:#2a2a2a}.widget-links{list-style:none;margin-top:10px}.widget-links li{margin-bottom:5px;overflow:hidden;border-radius:5px}.widget-links li a{font-size:13px;display:flex;align-items:center;gap:5px;text-decoration:none;padding:8px 4px;background:#f0f2f5;color:#2b4a80;font-weight:700;transition:all 0.3s ease;border-radius:5px}body.dark .widget-links li a{background:#333;color:#ddd}.widget-links li a i{min-width:20px;text-align:center}.widget-links li a:hover{background:#2b4a80;color:#fff;transform:translateX(5px);box-shadow:0 4px 8px rgb(0 0 0 / .2)}body.dark .widget-links li a:hover{background:#fc0;color:#111}footer{text-align:center;padding:20px;background:#052160;margin-top:35px}@media(max-width:900px){.container{display:block}aside{margin-bottom:20px}.main-content{height:400px}}.footer{width: 980px;margin: 0 auto;text-align: justify;padding: 50px;}.footer a {color: #fff;}.footer p{margin-bottom: 10px;}.footer h1,h2,h3,h4,h5,h6{font-size: 17px}.data-source{text-align:center;font-size:16px;color:#888;margin-bottom:20px}.main-content table{width:100%;border-collapse:collapse;margin-top:20px}.main-content th,td{padding:8px;text-align:center;border:1px solid #ddd;font-size:14px}.main-content th{background-color:#385493;color:#fff}.main-content tr:nth-child(even){background-color:#f9f9f9}.main-content tr:hover{background-color:#f1f1f1}.team-logo{vertical-align: middle;width:20px;height:20px;border-radius:50%}.position{text-align: center;font-weight:700;color:#007BFF}.points{font-weight:700;color:#28a745}.cache-warning{color:#ff9800;font-size:14px;text-align:center;margin-top:20px}#myBtn { display: none; position: fixed; bottom: 20px; right: 30px; z-index: 99; font-size: 18px; border: 0; outline: 0; background-color: red; color: #fff; cursor: pointer; padding: 15px; border-radius: 4px; }#myBtn:hover { background-color: #555;}#loading-message{display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:#333;padding:50px}.loader{border:8px solid #f3f3f3;border-top:8px solid #3498db;border-radius:50%;width:60px;height:60px;animation:spin 1s linear infinite;margin-bottom:20px}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}#iframe-container{display:none}#tip table{width:100%}#tip{width:100%;font-family:Verdana;font-size:15px;background:#385493;margin-bottom:30px}#tip td{padding:0;text-align:center;height:35px;line-height:25px;color:#000;font-size:13px}#tip .liga-match img{vertical-align:middle;width:25px;position:relative;bottom:2px;left:10px}#tip .liga-match{height:35px;line-height:0;color:#fff;width:100%;font-weight:700}#tip .liga-match span{position:relative;left:15px;line-height:36px}#tip .liga-list{border:1px solid #052160;background:#d3d3d3;width:100%}#tip .liga-list th{height:25px;border:1px solid #052160;color:#000}#tip table{margin-top: 0px;background:#fff}#tip table div{color:#000;height:25px;font-size:15px;line-height:25px}#tip table td span img{position:relative;float:right;right:5px;top:7px}.hasil-bg{background-color:#385493;color:#fff}.hasil{color: #000;font-size:17px;font-weight:700}.hasil-pool{text-align:left;padding-left:30px}.bgColor1{background-color:#E8F3FF}.bgColor2{background-color:#ebebeb}.no-data{background-color:#fff;text-align:center}#hasil_togel td {color: #000;background: #f0f2f5;}#hasil_togel th{font-size:16px;background:#385493;height:40px}#menu_togel td{background:-webkit-gradient(linear,0% 0%,0% 100%,from(#dcdcdc),to(#ffffff));background:-webkit-linear-gradient(top,#edf7ff,#b5b5b5);padding:10px;font-weight:700;cursor:pointer;color: #000;}#menu_togel .list-btn{cursor:pointer}.tabcontent h2{text-align:center;margin-top:30px}.tabcontent h2 span{color:#ff0101}#menu_togel td .active {background: #000;padding: 10px;color: #fff;}#klasemen {background: #fff;color: #000;}</style>
+<style>.article-wrap{width:100%;padding:25px 28px 30px;background:#fff;color:#222;line-height:1.7;font-size:15px}.article-wrap h1{margin:0 0 20px;padding-bottom:15px;color:#226204;font-size:28px;line-height:1.35;font-weight:700;border-bottom:2px solid #e7eee3}.article-wrap h2{margin:30px 0 15px;padding:10px 12px;color:#226204;background:#f2f8ef;border-left:4px solid #559537;border-radius:4px;font-size:21px;line-height:1.4}.article-wrap h3{margin:20px 0 7px!important;padding:8px 12px;color:#226204!important;background:#f7faf6;border-left:3px solid #559537;border-radius:3px;font-size:16px;line-height:1.4}.article-wrap p{margin:0 0 15px;color:#444;line-height:1.75}.article-wrap strong{color:#226204;font-weight:700}.article-wrap a{color:#226204;font-weight:600;text-decoration:none}.article-wrap a:hover{color:#559537;text-decoration:underline}.article-wrap h2:nth-of-type(3){margin-top:35px}.article-wrap h2:last-of-type{margin-top:35px}.article-wrap p:last-child{margin-bottom:5px}body.dark .article-wrap{background:#2a2a2a;color:#ddd}body.dark .article-wrap h1{color:#8dcc6b;border-color:#444}body.dark .article-wrap h2{color:#9bd47c;background:#333;border-left-color:#559537}body.dark .article-wrap h3{color:#9bd47c!important;background:#333;border-left-color:#559537}body.dark .article-wrap p{color:#ddd}body.dark .article-wrap strong{color:#9bd47c}body.dark .article-wrap a{color:#9bd47c}@media (max-width:900px){.article-wrap{padding:20px 18px 25px;font-size:14px}.article-wrap h1{font-size:23px;margin-bottom:18px}.article-wrap h2{font-size:19px;margin-top:25px}.article-wrap h3{font-size:15px}.article-wrap p{line-height:1.65}}body.dark .klasemen-table{background:#f9f9f9;color:#000}body.dark #refreshLink,body.dark .cache-warning a,body.dark #loading-message{color:#fff}</style>
+</head>
+<body>
+
+<header style="height: 140px;">
+    <div class="header-image" style="height: 80px;">
+              </div>
+        
+    <div class="header-container">
+        <nav>
+            <ul class="main-menu">
+                <li><a href="/"><i class="fa fa-home"></i> Livescore</a></li>
+                <li><a href="/hasilbola"><i class="fas fa-trophy"></i> Hasil Bola</a></li>
+                <li><a href="/jadwal"><i class="fas fa-calendar-alt"></i> Jadwal Bola</a></li>
+                <li><a href="/rtp">🎰 RTP Slot</a></li>
+                <li><a href="/parlay"><i class="fas fa-futbol"></i> Hitung Parlay</a></li>
+            </ul>
+        </nav>
+        <div class="dark-toggle" onclick="toggleDarkMode()">Mode Gelap</div>
+    </div>
+</header>
+<div class="secondary-menu">
+    <ul>
+        <li><a href="/prediksi">Prediksi <img alt="Prediksi" src="https://id.jayaskor.info/images/h2h.gif" style="width: 30px;"></a></li>
+        <li><a href="/result">Hasil & Jadwal</a></li>
+        <li><a href="/hasil-togel">Togel Hari Ini</a></li>
+        <li><a href="/hasilsgp"><i class="fa fa-rss" aria-hidden="true"></i> Live SGP</a></li>
+        <li><a href="/prediksi-togel"><i class="fa-solid fa-bullseye"></i> Prediksi Togel</a></li>
+    </ul>
+</div>
+<div class="banner" style="margin: 0 auto;width: 980px;position: relative;top: 5px;">
+</div>
+
+<div class="container">
+    <aside>
+        <ul class="widget-links" style="margin: 0;">
+    </ul>
+        <ul class="widget-links" style="margin: 0;">
+            <li><a href="/stats.php?league=worldcup"><img alt="World Cup" src="https://upload.wikimedia.org/wikipedia/en/1/17/2026_FIFA_World_Cup_emblem.svg" style="width: 20px;height: 15px;background: #fff;border-radius: 50%;"> World Cup</a></li>
+            <li><a href="/stats.php?league=europeanchampionship"><img alt="Euro " src="https://upload.wikimedia.org/wikipedia/en/2/26/UEFA_Euro_2024_Logo.svg" style="width: 20px;height: 15px;background: #fff;border-radius: 50%;"> Euro </a></li>
+        </ul>
+        <h3 style="font-size: 15px;padding-left: 10px;background: #a90000;color: #fff;">Europa League</h3>
+        <ul class="widget-links">
+            <li><a href="/klasemen?league=premierleague"><img alt="Premier League" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764764079/1_go06vu.png" style="width: 20px;height: 15px;"> EPL</a></li>
+            <li><a href="/klasemen?league=laliga"><img alt="La Liga" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764764079/2_gbukn2.png" style="width: 20px;height: 15px;"> La Liga</a></li>
+            <li><a href="/klasemen?league=seriea"><img alt="Serie A" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764764079/3_hxhwtf.png" style="width: 20px;height: 15px;"> Serie A</a></li>
+            <li><a href="/klasemen?league=bundesliga"><img alt="Bundesliga" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764764080/4_vlotvf.png" style="width: 20px;height: 15px;"> Bundesliga</a></li>
+            <li><a href="/klasemen?league=ligue1"><img alt="Ligue 1" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764764080/5_sgxudl.png" style="width: 20px;height: 15px;"> Ligue 1</a></li>
+        </ul>
+         <h3 style="font-size: 15px;padding-left: 10px;background: #a90000;color: #fff;">Hot League</h3>
+        <ul class="widget-links">
+            <li><a href="/stats.php?league=championsleague"><img alt="UEFA Champions" src="https://upload.wikimedia.org/wikipedia/en/f/f5/UEFA_Champions_League.svg" style="width: 20px;height: 15px;background: #fff;border-radius: 50%;"> UEFA Champio..</a></li>
+            <li><a href="/standing?league=conference"><img alt="UEFA Conference League" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/UEFA_Conference_League_full_logo_%282024_version%29.svg" style="width: 20px;height: 15px;background: #fff;border-radius: 50%;"> Conference Le..</a></li>
+            
+            <li><a href="/standing?league=europa"><img alt="UEFA Europa League" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/UEFA_Europa_League_logo_%282024_version%29.svg" style="width: 20px;height: 15px;background: #fff;border-radius: 50%;"> Europa League</a></li>
+            
+            
+            <li><a href="/stats.php?league=championship"><img alt="EFL" src="https://upload.wikimedia.org/wikipedia/id/b/be/EFL_Championship_Logo.svg.png" style="width: 20px;height: 15px;background: #fff;border-radius: 50%;"> EFL Champion..</a></li>
+            <li><a href="/stats.php?league=eredivisie"><img alt="Eredivisie" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Eredivisie_nieuw_logo_2017-.svg" style="width: 20px;height: 15px;background: #fff;border-radius: 50%;"> Eredivisie</a></li>
+            <li><a href="/stats.php?league=primeiraliga"><img alt="Primeira liga" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Liga_Portugal_Betclic_logo.svg" style="width: 20px;height: 15px;background: #fff;border-radius: 50%;"> Primeira liga</a></li>
+            <li><a href="/stats.php?league=libertadores"><img alt="Libertadores" src="https://upload.wikimedia.org/wikipedia/en/a/a1/Copa_Libertadores_logo.svg" style="width: 20px;height: 15px;background: #fff;border-radius: 50%;"> Libertadores</a></li>
+            <li><a href="/stats.php?league=brasileirao"><img alt="Brasileirao" src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Campeonato_Brasileiro_S%C3%A9rie_A_logo_%282024%29.svg" style="width: 20px;height: 15px;background: #fff;border-radius: 50%;"> Brasileirao</a></li>
+       </ul>
+        <h3 style="font-size: 15px;padding-left: 10px;background: #a90000;color: #fff;">Hasil Togel</h3>
+        <ul class="widget-links tips">
+            <li><a href="/hasil-lengkap?pasaran=sgp"><img alt="Togel Sgp" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764842974/6_e0l64g.png" style="width: 15px;"> SGP</a></li>
+            <li><a href="/hasil-lengkap?pasaran=sydney"><img alt="Togel Sydney" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764842969/7_t7svtn.png" style="width: 15px;"> Sydney</a></li>
+            <li><a href="/hasil-lengkap?pasaran=china"><img alt="Togel China" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764842969/8_eujoei.png" style="width: 15px;"> China</a></li>
+            <li><a href="/hasil-lengkap?pasaran=manila"><img alt="Togel Manila" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764842969/9_bgdcdl.png" style="width: 15px;"> Manila</a></li>
+            <li><a href="/hasil-lengkap?pasaran=hanoi"><img alt="Togel Hanoi" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764842969/10_ant9y7.png" style="width: 15px;"> Hanoi</a></li>
+            <li><a href="/hasil-lengkap?pasaran=japan"><img alt="Togel Japan" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764842970/11_s1gta9.png" style="width: 15px;"> Japan</a></li>
+            <li><a href="/hasil-lengkap?pasaran=hongkong"><img alt="Togel Hongkong" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764842970/12_wez1y1.png" style="width: 15px;"> Hongkong</a></li>
+            <li><a href="/hasil-lengkap?pasaran=cambodia"><img alt="Togel Cambodia" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764842970/13_k0chot.png" style="width: 15px;"> Cambodia</a></li>
+            <li><a href="/hasil-lengkap?pasaran=bangkok"><img alt="Togel Bangkok" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764842970/14_iwxyqi.png" style="width: 15px;"> Bangkok</a></li>
+            <li><a href="/hasil-lengkap?pasaran=macau"><img alt="Togel Macau" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764842970/15_zenxet.png" style="width: 15px;"> Macau</a></li>
+            <li><a href="/hasil-lengkap?pasaran=taipei"><img alt="Togel Taipei" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1764842969/16_nnvu7a.png" style="width: 15px;"> Taipei</a></li>
+        </ul>
+</aside>
+    <div class="main-content">
+                    
+<style>.parlay-calculator{width:100%;max-width:1050px;margin:0 auto;padding:5px 0 25px;box-sizing:border-box;color:#1f2937;font-family:inherit}.parlay-header{margin-bottom:12px}.parlay-header h1,.parlay-header h3{margin:0;font-size:20px;font-weight:800;line-height:1.3;color:#111827}.parlay-calculator hr{border:0;border-top:1px solid #e5e7eb;margin:18px 0}.parlay-summary{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;gap:14px;margin:20px 0}.summary-item{min-width:0}.summary-item label,.parlay-field>label{display:block;margin-bottom:7px;font-size:12px;font-weight:700;color:#4b5563;letter-spacing:.2px}.form-control{width:100%;min-height:44px;box-sizing:border-box;border:1px solid #d9dee7;border-radius:9px;padding:9px 12px;background:#fff;color:#111827;font-size:14px;font-weight:500;outline:none;transition:border-color .2s ease,box-shadow .2s ease,background .2s ease}.form-control:hover{border-color:#b9c2d0}.form-control:focus{border-color:#1677ff;background:#fff;box-shadow:0 0 0 3px rgb(22 119 255 / .10)}.form-control::placeholder{color:#9ca3af}.form-control[type="number"]{appearance:textfield}.form-control[type="number"]::-webkit-inner-spin-button,.form-control[type="number"]::-webkit-outer-spin-button{opacity:.7}.parlay-calculator .btn{min-height:44px;border:0;border-radius:9px;padding:9px 16px;font-family:inherit;font-size:13px;font-weight:700;cursor:pointer;transition:transform .15s ease,box-shadow .2s ease,filter .2s ease}.parlay-calculator .btn:hover{filter:brightness(.97)}.parlay-calculator .btn:active{transform:translateY(1px)}.add-button{display:flex;align-items:flex-end}.btn-success{background:#385493;color:#fff;box-shadow:0 5px 14px rgb(22 163 74 / .20)}.btn-success:hover{box-shadow:0 7px 18px rgb(22 163 74 / .28)}.btn-danger{background:#fff1f2;color:#dc2626;border:1px solid #fecdd3!important}.btn-danger:hover{background:#dc2626;color:#fff;border-color:#dc2626!important;box-shadow:0 5px 14px rgb(220 38 38 / .18)}.result-box{display:flex;align-items:center;min-height:44px;box-sizing:border-box;padding:8px 13px;border-radius:9px;color:#fff;font-size:15px;font-weight:800;overflow:hidden}.result-info{background:linear-gradient(135deg,#0ea5e9,#0284c7);box-shadow:0 5px 14px rgb(14 165 233 / .18)}.result-warning{background:linear-gradient(135deg,#f59e0b,#d97706);box-shadow:0 5px 14px rgb(245 158 11 / .18)}.parlay-card{position:relative;margin:14px 0;padding:17px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:0 3px 12px rgb(15 23 42 / .05);transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}.parlay-card:hover{border-color:#d5dce7;box-shadow:0 7px 20px rgb(15 23 42 / .08);transform:translateY(-1px)}.parlay-number{display:flex;align-items:center;margin-bottom:15px;padding-bottom:10px;font-size:14px;font-weight:800;color:#111827;border-bottom:1px solid #edf0f3}.parlay-number::before{content:"";width:4px;height:18px;margin-right:9px;border-radius:10px;background:#385493}.parlay-grid{display:grid;grid-template-columns:115px 180px minmax(0,1fr);gap:15px;align-items:end}.parlay-field{min-width:0}.result-options{display:flex;flex-wrap:wrap;gap:8px}.radio-option{position:relative;display:inline-flex;align-items:center;gap:6px;min-height:38px;box-sizing:border-box;padding:7px 11px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;font-size:12px;font-weight:600;color:#475569;cursor:pointer;transition:background .2s ease,border-color .2s ease,color .2s ease,box-shadow .2s ease}.radio-option:hover{background:#eff6ff;border-color:#bfdbfe;color:#052160}.radio-option input{width:14px;height:14px;margin:0;accent-color:#052160;cursor:pointer}.radio-option:has(input:checked){background:#eff6ff;border-color:#385493;color:#052160;box-shadow:0 0 0 2px rgb(37 99 235 / .06)}.odds-result{margin-top:9px;padding:8px 11px;background:#f8fafc;border:1px solid #eef2f7;border-radius:7px;font-size:12px;color:#64748b}.odds-result strong{color:#1677ff;font-weight:800}.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0}.info-box{padding:16px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;font-size:12px;line-height:1.65;color:#4b5563}.info-box h3{display:flex;align-items:center;margin:0 0 9px;font-size:14px;font-weight:800;color:#1f2937}.info-box ul{margin:0;padding-left:18px}.info-box li{margin-bottom:5px}.info-box li:last-child{margin-bottom:0}.info-box p{margin:6px 0}.formula-box{background:linear-gradient(135deg,#fffaf0,#fffdf8);border-color:#f1dfb5}.formula-box h3{color:#92400e}.formula-box p:first-of-type{padding:10px 12px;background:#fff;border:1px dashed #e8c875;border-radius:7px;color:#78350f;font-weight:700}.formula-note{color:#78716c!important}@media (max-width:768px){.parlay-calculator{padding:0 10px 20px}.parlay-header h1,.parlay-header h3{font-size:21px}.parlay-summary{grid-template-columns:1fr 1fr;gap:10px}.parlay-grid{grid-template-columns:110px 1fr;gap:12px}.result-field{grid-column:1 / -1}.info-grid{grid-template-columns:1fr;gap:10px}.result-options{gap:7px}}@media (max-width:480px){.parlay-calculator{padding:0 8px 18px}.parlay-header h1,.parlay-header h3{font-size:19px}.parlay-summary{grid-template-columns:1fr;gap:9px}.add-button{display:block}.parlay-card{margin:12px 0;padding:13px;border-radius:10px}.parlay-grid{grid-template-columns:1fr;gap:11px}.result-field{grid-column:auto}.remove-field{order:10}.parlay-calculator .btn{width:100%}.result-options{display:grid;grid-template-columns:1fr 1fr;gap:7px}.radio-option{justify-content:flex-start;min-height:40px;padding:7px 8px;font-size:11px}.radio-option span{font-size:11px}.info-box{padding:13px;font-size:12px}.odds-result{font-size:11px}}@media (max-width:360px){.parlay-calculator{padding:0 6px 15px}.parlay-card{padding:11px}.radio-option{padding:6px}.radio-option span{font-size:10px}.parlay-header h1,.parlay-header h3{font-size:18px}}body.dark h2 {color: #ddd;}body.dark .summary-item label {color: #ddd;}</style>
+      
+            
+       <section style="padding: 10px;">
+     
+    
+      <div class="content-box">
+      <form id="app" class="parlay-calculator">
+  <div class="parlay-header">
+    <h2 class="content-title" style="text-align: center;"> Kalkulator Parlay {{ totalbet }} Partai </h2
+  </div>
+  <hr>
+  <!-- SUMMARY -->
+  <div class="parlay-summary">
+    <!-- TAMBAH -->
+    <div class="summary-item add-button">
+      <button type="button" v-on:click="addNewParlay" class="btn btn-block btn-success"> + Tambah Partai </button>
+    </div>
+    <!-- NILAI BET -->
+    <div class="summary-item">
+      <label>Nilai Bet</label>
+      <input type="number" name="nilaibet" v-model="nilaibet" class="form-control" :value="nilaibet" @change="oddstotal()" min="1" max="10000000">
+    </div>
+    <!-- TOTAL ODDS -->
+    <div class="summary-item">
+      <label>Hasil Odds</label>
+      <div class="result-box result-info">
+        <b>{{ totalodds }}</b>
+      </div>
+    </div>
+    <!-- HASIL AKHIR -->
+    <div class="summary-item">
+      <label>Hasil Akhir</label>
+      <div class="result-box result-warning">
+        <b>{{ totalc }}</b>
+      </div>
+    </div>
+  </div>
+  <!-- PARLAY LIST -->
+  <div v-for="(parlay, index) in parlays" class="parlay-card">
+    <div class="parlay-number"> Partai {{ index + 1 }}
+    </div>
+    <div class="parlay-grid">
+      <!-- HAPUS -->
+      <div class="parlay-field remove-field">
+        <button type="button" v-on:click="removeParlay(index)" class="btn btn-block btn-danger"> Hapus </button>
+      </div>
+      <!-- ODDS -->
+      <div class="parlay-field">
+        <label> Odds {{ index + 1 }}
+        </label>
+        <input @change="oddstotal()" v-model="parlay.odds" type="number" name="parlays[][odds]" class="form-control" step="0.01" min="0">
+      </div>
+      <!-- HASIL PARTAI -->
+      <div class="parlay-field result-field">
+        <label> Hasil Partai {{ index + 1 }}
+        </label>
+        <div class="result-options">
+          <label class="radio-option">
+            <input type="radio" @change="oddstotal()" v-model="parlay.hasil" value="1">
+            <span>Menang Full</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" @change="oddstotal()" v-model="parlay.hasil" value="0.5">
+            <span>Menang Setengah</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" @change="oddstotal()" v-model="parlay.hasil" value="-0.5">
+            <span>Kalah Setengah</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" @change="oddstotal()" v-model="parlay.hasil" value="0">
+            <span>Seri</span>
+          </label>
+        </div>
+        <div class="odds-result"> Hasil Odds: <strong>{{ parlay.oddsx }}</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- CATATAN -->
+  <div class="info-grid">
+    <div class="info-box">
+      <h3>Catatan</h3>
+      <ul>
+        <li> Jika menang penuh, hasil perhitungan akan mengikuti nilai Odds. </li>
+        <li> Jika menang setengah (Half Win), perhitungannya adalah (Odds - 1) / 2 + 1. </li>
+        <li> Jika kalah setengah (Half Lose), hasil perhitungannya tetap 0,5. </li>
+        <li> Jika seri (Draw), hasil perhitungannya tetap 1 atau tidak diperhitungkan, sesuai sistem yang digunakan. </li>
+      </ul>
+    </div>
+    <!-- RUMUS -->
+    <div class="info-box formula-box">
+      <h3>Rumus Mix Parlay</h3>
+      <p> (Hasil Perkalian Odds × Jumlah Betting) − Jumlah Betting </p>
+      <p class="formula-note">
+        <i> Jika hasil perhitungan minus (-), berarti Anda mengalami kekalahan sebesar nilai yang dihasilkan. <br> Jika hasil perhitungan plus (+), berarti Anda mendapatkan kemenangan sebesar nilai yang dihasilkan. </i>
+      </p>
+    </div>
+  </div>
+  <hr>
+</form>
+</div>
+    </section>
+    <script src="https://id.jayaskor.info/js/vue.min.js"></script>
+            
+            
+            
+            
+    </div>
+<style>.tips li a {padding: 5px 12px;}</style>
+    <aside>
+        <ul class="widget-links" style="margin: 0;">
+    </ul>
+        
+        <h3 style="font-size: 15px;text-align: center;background: #052160;color: #fff;">Tips Prediksi</h3>
+        <ul class="widget-links tips">
+            <li><a href="/prediksi"><i class="fas fa-lightbulb"></i> Hari Ini <sup><img alt="Prediksi bola" src="https://id.jayaskor.info/images/h2h.gif"></sup></a></li>
+            <li><a href="/tips/uefa"><img alt="UEFA" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1763199699/champions-league_vrn2ly.png" style="width: 20px;"> UEFA</a></li>
+            <li><a href="/tips/worldcup"><img alt="Piala Dunia" src="https://res.cloudinary.com/dellrmfg1/image/upload/v1763199699/world-cup_uoif31.png" style="width: 20px;"> Piala Dunia</a></li>
+            <li><a href="/tips/inggris"><img alt="Inggris" src="https://ssl.gstatic.com/onebox/media/sports/logos/DTqIL8Ba3KIuxGkpXw5ayA_96x96.png" style="width: 20px;"> Inggris</a></li>
+            <li><a href="/tips/spanyol"><img alt="Spanyol" src="https://ssl.gstatic.com/onebox/media/sports/logos/5hLkf7KFHhmpaiOJQv8LmA_96x96.png" style="width: 20px;"> Spanyol</a></li>
+            <li><a href="/tips/italy"><img alt="Italy" src="https://ssl.gstatic.com/onebox/media/sports/logos/joYpsiaYi4GDCqhSRAq5Zg_96x96.png" style="width: 20px;"> Italy</a></li>
+            <li><a href="/tips/jerman"><img alt="Jerman" src="https://ssl.gstatic.com/onebox/media/sports/logos/h1FhPLmDg9AHXzhygqvVPg_96x96.png" style="width: 20px;"> Jerman</a></li>
+            <li><a href="/tips/belanda"><img alt="Belanda" src="https://ssl.gstatic.com/onebox/media/sports/logos/8GEqzfLegwFFpe6X2BODTg_96x96.png" style="width: 20px;"> Belanda</a></li>
+            <li><a href="/tips/prancis"><img alt="Prancis" src="https://ssl.gstatic.com/onebox/media/sports/logos/z3JEQB3coEAGLCJBEUzQ2A_96x96.png" style="width: 20px;"> Prancis</a></li>
+            <li><a href="/tips/indonesia"><img alt="Indonesia" src="https://ssl.gstatic.com/onebox/media/sports/logos/kErkaIWGPh_VGrd4T6NwUA_96x96.png" style="width: 20px;"> Indonesia</a></li>
+        </ul>
+        <ul class="widget-links" style="margin: 0;">
+    </ul>
+<ul class="widget-links" style="margin: 0;">
+    </ul>
+    </aside></div>
+
+<footer>
+<div style="color: #fff;">
+            © 2025 JAYASKOR.COM    </div>
+
+<div class="footer" style="color: #fff;margin-top: 100px;">
+        <!-- Footer Konten -->
+            <h1>Kalkulator Parlay Bola, Mix Parlay: Hitung Total Odds dengan Lebih Praktis</h1>
+
+<p>Buat yang sering mengikuti pertandingan bola dan suka mengombinasikan beberapa pilihan dalam satu slip, menghitung total odds secara manual kadang lumayan bikin ribet. Apalagi kalau jumlah pertandingan yang dipilih sudah banyak. Salah hitung sedikit saja, hasil akhirnya bisa berbeda.</p>
+
+<p>Nah, di sinilah kalkulator parlay bola bisa membantu.</p>
+
+<p>Melalui kalkulator parlay, kamu bisa memasukkan beberapa pilihan pertandingan sekaligus untuk melihat perkiraan kombinasi odds dengan lebih cepat. Jadi, sebelum membuat kombinasi, kamu sudah punya gambaran mengenai total odds yang dihasilkan.</p>
+
+<p>Di JayaSkor, kalkulator ini dibuat untuk membantu proses perhitungan supaya lebih simpel. Kamu nggak perlu lagi menghitung satu per satu menggunakan kalkulator HP atau mencatat angka di kertas.</p>
+
+<h2>Apa Itu Kalkulator Parlay Bola?</h2>
+
+<p>Secara sederhana, kalkulator parlay bola adalah alat bantu untuk menghitung kombinasi odds dari beberapa pilihan pertandingan.</p>
+
+<p>Misalnya kamu punya tiga pilihan pertandingan dengan odds:</p>
+
+<ul style="margin-left: 0;padding-left: 25px;">
+<li style="padding-left: 3px;">Pertandingan A: 1.80</li>
+<li style="padding-left: 3px;">Pertandingan B: 1.70</li>
+<li style="padding-left: 3px;">Pertandingan C: 2.00</li>
+</ul>
+
+<p>Dalam kombinasi parlay, odds tersebut dikalikan untuk mendapatkan estimasi total odds.</p>
+
+<p>1.80 × 1.70 × 2.00 = 6.12</p>
+
+<p>Jadi, estimasi kombinasi odds dari tiga pilihan tersebut adalah 6.12.</p>
+
+<p>Kalau dihitung manual sebenarnya gampang ketika hanya ada dua atau tiga pertandingan. Tapi kalau sudah lima, tujuh, bahkan lebih, perhitungannya bisa mulai bikin kepala cenat-cenut.</p>
+
+<p>Karena itu, kalkulator parlay menjadi lebih praktis untuk digunakan.</p>
+
+<h2>Kenapa Banyak Orang Menggunakan Kalkulator Parlay?</h2>
+
+<p>Alasan utamanya simpel: hemat waktu dan mengurangi kesalahan hitung.</p>
+
+<p>Daripada harus mengalikan angka satu per satu, kamu tinggal memasukkan odds yang ingin dihitung. Hasil kombinasi bisa langsung terlihat.</p>
+
+<p>Selain itu, kalkulator juga berguna ketika kamu sedang membandingkan beberapa skenario.</p>
+
+<p>Contohnya, kamu punya dua pilihan kombinasi:</p>
+
+<p>Kombinasi pertama</p>
+
+<p>1.75 × 1.80 × 1.90 = 5.985</p>
+
+<p>Kombinasi kedua</p>
+
+<p>1.70 × 1.85 × 2.10 = 6.6045</p>
+
+<p>Dengan melihat hasil tersebut, kamu bisa lebih mudah memahami perbedaan total odds dari masing-masing kombinasi.</p>
+
+<p>Yang perlu digarisbawahi, total odds bukan berarti hasil pertandingan menjadi lebih pasti. Kalkulator hanya melakukan perhitungan berdasarkan angka odds yang kamu masukkan.</p>
+
+<h2>Apa Bedanya Parlay dan Mix Parlay?</h2>
+
+<p>Istilah parlay dan mix parlay sering digunakan bersamaan, tetapi pilihan pertandingan di dalamnya bisa memiliki variasi pasar yang berbeda.</p>
+
+<p>Pada dasarnya, parlay menggabungkan beberapa pilihan menjadi satu kombinasi. Setiap pilihan memiliki odds masing-masing dan kemudian dikombinasikan.</p>
+
+<p>Sementara itu, istilah mix parlay biasanya digunakan untuk menggambarkan kombinasi beberapa pilihan atau pasar pertandingan dalam satu slip.</p>
+
+<p>Contohnya, seseorang bisa mengombinasikan:</p>
+
+<ul style="margin-left: 0;padding-left: 25px;">
+<li style="padding-left: 3px;">Tim A menang</li>
+<li style="padding-left: 3px;">Total gol pertandingan B over</li>
+<li style="padding-left: 3px;">Handicap pertandingan C</li>
+<li style="padding-left: 3px;">Tim D atau draw (double chance)</li>
+</ul>
+
+<p>Jenis pasar yang tersedia tentunya bergantung pada platform dan pertandingan yang sedang dimainkan.</p>
+
+<p>Karena variasi pilihan bisa cukup banyak, kalkulator parlay sangat membantu untuk melihat hasil perhitungannya sebelum menentukan kombinasi.</p>
+
+<h2>Cara Menggunakan Kalkulator Parlay Bola JayaSkor</h2>
+
+<p>Menggunakan kalkulator parlay sebenarnya nggak serumit yang dibayangkan.</p>
+
+<p>Secara umum, langkahnya seperti ini:</p>
+
+<h3>1. Tentukan pertandingan</h3>
+
+<p>Pilih pertandingan bola yang ingin kamu masukkan ke dalam kombinasi.</p>
+
+<p>Sebelum memilih, sebaiknya pahami dulu pertandingan yang sedang kamu lihat. Perhatikan performa tim, kondisi skuad, statistik pertandingan, hingga faktor kandang dan tandang jika memang relevan.</p>
+
+<h3>2. Masukkan odds</h3>
+
+<p>Setelah menentukan pilihan, masukkan angka odds ke kalkulator.</p>
+
+<p>Contohnya:</p>
+
+<ul style="margin-left: 0;padding-left: 25px;">
+<li style="padding-left: 3px;">1.65</li>
+<li style="padding-left: 3px;">1.80</li>
+<li style="padding-left: 3px;">2.10</li>
+<li style="padding-left: 3px;">1.75</li>
+</ul>
+
+<p>Kalkulator kemudian akan mengolah angka tersebut menjadi satu estimasi kombinasi.</p>
+
+<h3>3. Cek total kombinasi</h3>
+
+<p>Setelah semua odds dimasukkan, kamu bisa melihat perkiraan total odds.</p>
+
+<p>Ini berguna untuk mengetahui seberapa besar perubahan total kombinasi ketika salah satu pilihan ditambahkan atau dihapus.</p>
+
+<h3>4. Bandingkan beberapa kombinasi</h3>
+
+<p>Jangan buru-buru memasukkan semua pertandingan sekaligus.</p>
+
+<p>Kamu bisa mencoba beberapa skenario terlebih dahulu. Misalnya, bagaimana hasilnya jika menggunakan tiga pertandingan dibandingkan lima pertandingan.</p>
+
+<p>Dengan begitu, kamu punya gambaran yang lebih jelas mengenai perubahan jumlah pilihan memengaruhi total odds.</p>
+
+<h2>Contoh Perhitungan Mix Parlay</h2>
+
+<p>Misalnya kamu mempunyai empat pilihan dengan odds berikut:</p>
+
+<ul style="margin-left: 0;padding-left: 25px;">
+<li style="padding-left: 3px;">Pilihan 1: 1.60</li>
+<li style="padding-left: 3px;">Pilihan 2: 1.75</li>
+<li style="padding-left: 3px;">Pilihan 3: 1.85</li>
+<li style="padding-left: 3px;">Pilihan 4: 2.00</li>
+</ul>
+
+<p>Maka perhitungannya:</p>
+
+<p>1.60 × 1.75 × 1.85 × 2.00 = 10.36</p>
+
+<p>Estimasi total oddsnya adalah 10.36.</p>
+
+<p>Contoh ini menunjukkan kenapa jumlah pilihan sangat berpengaruh terhadap total odds.</p>
+
+<p>Semakin banyak pilihan yang digabungkan, total odds bisa semakin besar. Namun, di sisi lain, setiap pilihan tambahan juga berarti ada tambahan hasil pertandingan yang harus sesuai dengan prediksi agar seluruh kombinasi berhasil.</p>
+
+<p>Jadi, jangan cuma melihat angka total odds yang besar dan langsung menganggapnya sebagai sesuatu yang lebih menguntungkan. Ada faktor risiko yang ikut meningkat ketika semakin banyak pilihan dimasukkan.</p>
+
+<h2>Kalkulator Parlay Bukan Alat untuk Menentukan Pemenang</h2>
+
+<p>Ini bagian yang sering disalahpahami.</p>
+
+<p>Kalkulator parlay hanya menghitung angka.</p>
+
+<p>Kalkulator tidak bisa mengetahui tim mana yang pasti menang, berapa skor akhirnya, atau apakah sebuah prediksi akan berhasil.</p>
+
+<p>Kalau kamu sedang mencari prediksi bola, tetap lakukan analisis pertandingan secara terpisah.</p>
+
+<p>Beberapa hal yang bisa menjadi bahan pertimbangan antara lain:</p>
+
+<ul style="margin-left: 0;padding-left: 25px;">
+<li style="padding-left: 3px;">performa beberapa pertandingan terakhir;</li>
+<li style="padding-left: 3px;">posisi klasemen;</li>
+<li style="padding-left: 3px;">rekor kandang dan tandang;</li>
+<li style="padding-left: 3px;">kondisi pemain;</li>
+<li style="padding-left: 3px;">kemungkinan rotasi skuad;</li>
+<li style="padding-left: 3px;">jadwal pertandingan yang padat;</li>
+<li style="padding-left: 3px;">head-to-head;</li>
+<li style="padding-left: 3px;">produktivitas dan kebobolan gol;</li>
+<li style="padding-left: 3px;">motivasi tim dalam pertandingan tersebut.</li>
+</ul>
+
+<p>Untuk yang terbiasa menggunakan prediksi Asian handicap, memahami cara kerja handicap juga penting. Jangan hanya melihat angka odds, tetapi pahami apa arti handicap yang ditawarkan dan bagaimana hasil pertandingan memengaruhi pilihan tersebut.</p>
+
+<h2>Jangan Terjebak Hanya pada Odds Besar</h2>
+
+<p>Odds besar memang kelihatan menarik.</p>
+
+<p>Misalnya ada kombinasi dengan total odds 20.00. Angka seperti ini tentu terlihat jauh lebih menarik dibandingkan kombinasi dengan odds 3.00.</p>
+
+<p>Tapi yang perlu dipahami, angka odds yang lebih tinggi bukan otomatis berarti pilihan tersebut lebih bagus.</p>
+
+<p>Dalam kombinasi yang terdiri dari banyak pertandingan, satu pilihan saja yang tidak sesuai bisa membuat seluruh kombinasi gagal.</p>
+
+<p>Karena itu, daripada mengejar angka besar semata, lebih baik memahami setiap pertandingan yang dimasukkan ke dalam kombinasi.</p>
+
+<p>Kalkulator digunakan untuk membantu menghitung, bukan untuk membuat keputusan secara otomatis.</p>
+
+<h2>Kalkulator Parlay untuk Cek Skenario Sebelum Membuat Kombinasi</h2>
+
+<p>Salah satu manfaat paling enak dari kalkulator parlay adalah kamu bisa melakukan simulasi.</p>
+
+<p>Misalnya awalnya kamu mempunyai enam pilihan pertandingan. Setelah dihitung, total odds ternyata jauh lebih tinggi dari yang kamu inginkan.</p>
+
+<p>Kamu bisa menghapus satu atau dua pilihan, kemudian menghitung ulang.</p>
+
+<p>Contohnya:</p>
+
+<p>5 pilihan:<br>
+1.70 × 1.75 × 1.80 × 1.65 × 1.90</p>
+
+<p>Kemudian kamu mencoba:</p>
+
+<p>3 pilihan:<br>
+1.70 × 1.75 × 1.80</p>
+
+<p>Dengan cara seperti ini, kamu bisa melihat bagaimana perubahan jumlah pilihan memengaruhi total kombinasi.</p>
+
+<p>Sederhana, tapi jauh lebih praktis daripada menghitung semuanya secara manual.</p>
+
+<h2>Apakah Kalkulator Parlay Bisa Menghitung Potensi Hasil?</h2>
+
+<p>Secara matematis, kalkulator bisa digunakan untuk memperkirakan hasil berdasarkan angka yang dimasukkan.</p>
+
+<p>Namun, hasil aktual tetap bergantung pada jenis taruhan, aturan platform, odds yang berlaku, dan hasil pertandingan.</p>
+
+<p>Jadi, jangan menganggap angka dari kalkulator sebagai jaminan keuntungan.</p>
+
+<p>Kalau kalkulator menunjukkan total odds 8.00, artinya kalkulator sedang melakukan perhitungan terhadap kombinasi angka tersebut. Bukan berarti pertandingan yang dipilih pasti menghasilkan kemenangan.</p>
+
+<p>Ini penting supaya penggunaan kalkulator tetap realistis.</p>
+
+<h2>Kenapa Kalkulator JayaSkor Lebih Praktis?</h2>
+
+<p>Tujuan utama kalkulator parlay bola JayaSkor adalah membuat proses perhitungan menjadi lebih sederhana.</p>
+
+<p>Daripada membuka kalkulator bawaan HP, mengetik angka satu per satu, lalu menghitung ulang ketika ada pilihan yang berubah, kamu bisa menggunakan kalkulator yang memang dibuat untuk kebutuhan kombinasi odds.</p>
+
+<p>Terutama ketika sedang membandingkan beberapa pilihan pertandingan, alat seperti ini bisa menghemat waktu.</p>
+
+<p>Kamu tinggal fokus pada hal yang lebih penting: memahami pertandingan dan menentukan kombinasi yang memang ingin dianalisis.</p>
+
+<h2>Kalkulator Parlay Bola untuk Penggemar Sepak Bola</h2>
+
+<p>Sepak bola memang bukan cuma soal menonton pertandingan.</p>
+
+<p>Banyak penggemar juga senang melihat statistik, membaca prediksi bola hari ini, membandingkan performa tim, sampai menganalisis berbagai pasar pertandingan.</p>
+
+<p>Di tengah banyaknya informasi tersebut, alat sederhana seperti kalkulator parlay bisa menjadi pelengkap.</p>
+
+<p>Misalnya kamu menemukan beberapa analisis pertandingan dari sumber berbeda. Daripada langsung membuat kombinasi, kamu bisa memasukkan odds masing-masing ke kalkulator terlebih dahulu.</p>
+
+<p>Dari sana kamu dapat melihat bagaimana perubahan satu pilihan memengaruhi keseluruhan kombinasi.</p>
+
+<p>Cara seperti ini membuat proses analisis menjadi lebih terstruktur.</p>
+
+<h2>Gunakan Kalkulator dengan Bijak</h2>
+
+<p>Pada akhirnya, kalkulator hanyalah alat bantu.</p>
+
+<p>Angka yang muncul dari kalkulator tidak dapat menjamin hasil pertandingan. Sepak bola tetap penuh dengan kejutan. Tim favorit bisa kehilangan poin, pemain utama bisa mengalami cedera, kartu merah bisa mengubah jalannya pertandingan, dan satu gol pada menit-menit akhir bisa membuat prediksi berantakan.</p>
+
+<p>Karena itu, gunakan kalkulator untuk memahami perhitungan odds, bukan sebagai alat untuk mengejar kemenangan yang pasti.</p>
+
+<p>Kalau aktivitas taruhan mulai terasa sulit dikendalikan atau mengganggu keuangan sehari-hari, sebaiknya berhenti dan cari bantuan yang sesuai.</p>
+
+<h2>FAQ Kalkulator Parlay Bola</h2>
+
+<h3>Apa itu kalkulator parlay bola?</h3>
+
+<p>Kalkulator parlay bola adalah alat untuk menghitung kombinasi odds dari beberapa pilihan pertandingan dalam satu kombinasi.</p>
+
+<h3>Bagaimana cara menghitung total odds parlay?</h3>
+
+<p>Secara umum, total odds parlay dihitung dengan mengalikan odds dari setiap pilihan yang digabungkan. Contohnya 1.80 × 1.70 × 2.00 menghasilkan 6.12.</p>
+
+<h3>Apakah kalkulator parlay bisa menjamin kemenangan?</h3>
+
+<p>Tidak. Kalkulator hanya melakukan perhitungan berdasarkan angka yang dimasukkan dan tidak dapat memprediksi hasil pertandingan secara pasti.</p>
+
+<h3>Apa yang dimaksud dengan mix parlay?</h3>
+
+<p>Mix parlay umumnya merujuk pada kombinasi beberapa pilihan atau pasar pertandingan dalam satu kombinasi. Detail pilihan yang tersedia bisa berbeda tergantung platform yang digunakan.</p>
+
+<h3>Apakah kalkulator parlay bisa digunakan untuk prediksi bola?</h3>
+
+<p>Kalkulator bisa menjadi alat bantu setelah kamu memiliki pilihan dan odds. Namun, kalkulator sendiri bukan alat prediksi pertandingan.</p>
+
+<h3>Apakah odds yang lebih besar selalu lebih baik?</h3>
+
+<p>Tidak. Odds yang lebih besar biasanya datang bersama kemungkinan hasil yang berbeda. Jangan menilai sebuah kombinasi hanya dari besarnya total odds.</p>
+
+<h2>Hitung Kombinasi Lebih Cepat dengan Kalkulator Parlay JayaSkor</h2>
+
+<p>Menghitung kombinasi odds secara manual sebenarnya bukan pekerjaan yang sulit. Tapi ketika jumlah pertandingan mulai banyak, prosesnya bisa memakan waktu dan rawan salah hitung.</p>
+
+<p>Dengan kalkulator parlay bola dan mix parlay JayaSkor, kamu bisa melakukan perhitungan kombinasi dengan lebih praktis sebelum melanjutkan ke tahap berikutnya.</p>
+
+<p>Masukkan odds, cek hasil kombinasi, lalu bandingkan beberapa skenario sesuai kebutuhan.</p>
+
+<p>Yang paling penting, tetap gunakan informasi pertandingan secara masuk akal dan jangan menganggap hasil kalkulator sebagai jaminan kemenangan.</p>
+
+<p>Kalkulator membantu menghitung. Keputusan tetap ada di tangan kamu.</p>          <!-- Footer Konten -->
+      </div>
+</footer>
+
+    <div style="background:#052160;color:#fff;text-align:center;font-family:Arial,Helvetica,sans-serif;font-size:12px;padding:12px 10px 16px;">
+
+  <h1 style="font-size:23px;margin:0 0 14px;font-weight:bold;">
+    JAYASKOR
+  </h1>
+
+  <div style="max-width:900px;margin:0 auto;line-height:19px;overflow-wrap:anywhere;">
+
+    <span style="color:#bbb;">Link Partners</span>
+
+    <a href="https://spbo.in/" rel="nofollow" style="color:#ddd;text-decoration:none;margin:0 4px;">SPBO</a> |
+    <a href="https://goaloo.in/" rel="nofollow" style="color:#ddd;text-decoration:none;margin:0 4px;">GOALOO</a> |
+    <a href="https://90bola.in/" rel="nofollow" style="color:#ddd;text-decoration:none;margin:0 4px;">90BOLA</a> |
+    <a href="https://asianbookie.in/" rel="nofollow" style="color:#ddd;text-decoration:none;margin:0 4px;">ASIANBOOKIE</a> |
+    <a href="https://id.asiabookie.click/" rel="nofollow" style="color:#ddd;text-decoration:none;margin:0 4px;">ASIABOOKIE</a> |
+    <a href="https://liga138skor.com/" rel="nofollow" style="color:#ddd;text-decoration:none;margin:0 4px;">LIGASKOR</a>
+
+  </div>
+
+</div>    
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const darkToggle = document.querySelector('.dark-toggle');
+    const body = document.body;
+
+    // Cek status dark mode yang tersimpan
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        body.classList.add('dark');
+    }
+
+    // Tombol dark mode
+    if (darkToggle) {
+        darkToggle.addEventListener('click', function () {
+            body.classList.toggle('dark');
+
+            // Simpan status
+            if (body.classList.contains('dark')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    }
+});
+</script>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script>
+var iframe = document.querySelector("iframe");
+var loadingMessage = document.getElementById("loading-message");
+var iframeContainer = document.getElementById("iframe-container");
+iframe.onload = function() {
+    loadingMessage.style.display = "none"; // sembunyikan loader
+    iframeContainer.style.display = "block"; // tampilkan iframe
+};
+</script>
+<script>
+         function openCity(evt,
+             cityName) {
+             var i, tabcontent, tablinks;
+             tabcontent = document.getElementsByClassName("tabcontent");
+             for (i = 0;
+                 i < tabcontent.length;
+                 i++) {
+                 tabcontent[i].style.display = "none";
+             }
+         
+             tablinks = document.getElementsByClassName("list-btn");
+             for (i = 0;
+                 i < tablinks.length;
+                 i++) {
+                 tablinks[i].className = tablinks[i].className.replace(" active", "");
+             }
+         
+             document.getElementById(cityName).style.display = "block";
+             evt.currentTarget.className += " active";
+         }
+         
+         document.getElementById("defaultOpen").click();
+      </script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,5047762,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<!-- Histats.com  END  -->
+
+<script language="javascript">
+         $(".carousel").owlCarousel({
+             margin: 2,
+             loop: true,
+             autoplay: true,
+             autoplayTimeout: 4000,
+             autoplayHoverPause: true,
+             responsive: {
+                 0: { items: 1, nav: false },
+                 470: { items: 2, nav: false },
+                 716: { items: 3, nav: false },
+                },
+         });
+      </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"17cc294f2712437182ca0fa97d2e3182","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
