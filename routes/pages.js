@@ -1,31 +1,10 @@
 const express = require('express');
 const path = require('path');
-const https = require('https');
-const fs = require('fs');
 const router = express.Router();
 
-// Fungsi ambil konten eksternal
-function fetchExternal(url) {
-  return new Promise((resolve, reject) => {
-    https.get(url, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => resolve(data));
-    }).on('error', reject);
-  });
-}
-
-// Homepage (dengan konten dinamis dari 100tst.xyz)
-router.get('/', async (req, res) => {
-  try {
-    const bankContent = await fetchExternal('https://100tst.xyz/liga138/bank/');
-    let html = fs.readFileSync(path.join(__dirname, '../views/index.html'), 'utf8');
-    html = html.replace('<!-- BANK_CONTENT -->', bankContent);
-    res.send(html);
-  } catch (err) {
-    console.error('Gagal ambil bank content:', err.message);
-    res.sendFile(path.join(__dirname, '../views/index.html'));
-  }
+// Homepage
+router.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../views/index.html'));
 });
 
 // Hasil Bola
